@@ -61,7 +61,6 @@ export default {
   },
   methods: {
     searchCoin() {
-      console.log(this.textSearch)
       this.filteredCoins = this.coins.filter(coin => coin.name.toUpperCase().includes(this.textSearch.toUpperCase()) || coin.symbol.toUpperCase().includes(this.textSearch.toUpperCase()))
     }
   }
